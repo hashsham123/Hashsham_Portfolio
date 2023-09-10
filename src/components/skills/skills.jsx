@@ -11,14 +11,14 @@ function skills() {
      <div className="skillBar">
         <img src={UIDesign} alt="UIDesign" className="skillBarImg" />
         <div className="skillBarText">
-            <h2>Front End Delopment</h2>
+            <h2>Front End Development</h2>
             <p>Front-end development using React empowers developers to build dynamic and responsive user interfaces with ease.</p>
         </div>
      </div>
      <div className="skillBar">
         <img src={WebDesign} alt="" className="skillBarImg" />
         <div className="skillBarText">
-            <h2>Back End Delopment</h2>
+            <h2>Back End Development</h2>
             <p>Back-end development using Node.js enables scalable and efficient server-side applications with JavaScript.</p>
         </div>
      </div>

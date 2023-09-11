@@ -1,8 +1,7 @@
 import React from "react";
-import TwitterIcon from "../../assets/twitter.png"
-import YoutubeIcon from "../../assets/youtube.png"
+import LinkedIn from "../../assets/linkedIn.png"
 import InstagramIcon from "../../assets/instagram.png"
-import FacebookIcon from "../../assets/facebook-icon.png"
+import Gihub from "../../assets/Github.png"
 import "../contact/contact.css"
 function contact() {
   return (
@@ -24,10 +23,20 @@ function contact() {
           Submit
         </button>
         <div className="links">
-          <img src={TwitterIcon} alt="link" className="link" />
-          <img src={YoutubeIcon} alt="link" className="link" />
+          <a href="https://www.linkedin.com/in/hashsham123" target="_blank">
+
+          <img src={LinkedIn} alt="Linked" className="Linked" />
+          </a>
+
+          <a href="https://www.instagram.com/k.hashsham/" target="_blank">
+
           <img src={InstagramIcon} alt="link" className="link" />
-          <img src={FacebookIcon} alt="link" className="link" />
+          </a>
+
+          <a href="https://github.com/hashsham123" target="_blank">
+          <img src={Gihub} alt="link" className="link" />
+          </a>
+         
           
         </div>
       </form>

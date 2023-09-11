@@ -74,6 +74,12 @@
   width: 3rem;
   margin: 0 0.75rem;
 }
+.Linked{
+  object-fit: cover;
+  height: 3rem;
+  width: 3rem;
+  margin: 0 0.75rem;
+}
 
  
 @media screen and (max-width: 700px) {

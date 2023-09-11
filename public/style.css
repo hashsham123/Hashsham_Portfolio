@@ -5,6 +5,7 @@
     text-decoration: none;
     background: transparent;
     font-family: "Poppins", sans-serif;
+   
 }
 
 body{
@@ -12,4 +13,10 @@ body{
     color: white;
     overflow: hidden;
     overflow-y: scroll;
+}
+
+@media screen and (max-width: 630px) {
+    * {
+ overflow-x: hidden;
+    }
 }

@@ -1,0 +1,59 @@
+.certificates {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.certificateImg {
+       padding: 0 1rem;
+    margin: 1rem auto;
+    height: 13rem;
+    width: 20rem;
+
+    /*     padding: 0 1rem;
+    margin: 1rem 2rem;
+    height: 20rem;
+    width: 28rem;*/
+
+}
+
+.Btn{
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 2rem;
+    width: 7rem;
+    height: 28px;
+    margin: 13px 20px;
+    text-align: center;
+    cursor: pointer;
+    position: sticky;
+    /*     background: white;
+    color: black;
+    font-size: 20px;
+    border: none;
+    border-radius: 2rem;
+    width: 11rem;
+    height: 56px;
+    margin: 14px 20px;
+    text-align: center;*/
+}
+
+.BackBtn{
+    background: rgb(40, 40, 40);
+   width: 100vw;
+   height: 3rem;
+   position: sticky;
+   top: 0;
+    /* background: rgb(40, 40, 40);
+   width: 100vw;
+   height: 5rem; */
+}
+
+
+@media screen and (max-width:"106"){
+    
+}

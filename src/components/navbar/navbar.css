@@ -39,6 +39,7 @@
     border:none ;
     padding: 0 1rem;
     border-radius: 2rem;
+    cursor: pointer;
 }
 .desktopMenuImg{
     object-fit: cover;

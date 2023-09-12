@@ -1,18 +1,33 @@
-import React from "react";
+import React, { useRef } from "react";
 import LinkedIn from "../../assets/linkedIn.png"
 import InstagramIcon from "../../assets/instagram.png"
 import Gihub from "../../assets/Github.png"
 import "../contact/contact.css"
-function contact() {
+import emailjs from '@emailjs/browser';
+
+function Contact() {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_gdk82h3', 'template_6iw9fi8', form.current, 'A4WsIm07SLl3wFrMh')
+      .then((result) => {
+          console.log(result.text);
+          e.target.reset();
+          alert("Email Sent, thanks for your response!")
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return (
     <div id="contact">
       <h1 className="contactPageTitle">Contact Me</h1>
       <span className="contactDesc">
         Please fill out the form to discuss any work opportunity.
       </span>
-      <form className="contactForm">
-        <input type="text" className="name" placeholder="Your Name" />
-        <input type="email" className="email" placeholder="Your Email" />
+      <form className="contactForm" ref={form} onSubmit={sendEmail}>
+        <input type="text" className="name" placeholder="Your Name" name="to_name"/>
+        <input type="email" className="email" placeholder="Your Email" name="from_name"/>
         <textarea
           className="msg"
           name="message"
@@ -44,4 +59,4 @@ function contact() {
   );
 }
 
-export default contact;
+export default Contact;
